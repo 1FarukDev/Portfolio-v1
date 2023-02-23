@@ -2,19 +2,62 @@
   padding: 0rem;
   margin: 0;
 }
+body {
+    background: rgba(225, 205, 181, 1);
+
+}
 header {
   display: flex;
   justify-content: space-between;
 }
 .header-image {
-  width: 300px;
+  /* height: 1080.000000000004px; */
+  width: 600px;
+  left: 1644px;
 }
 .header-text {
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-family: "Satoshi";
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: -0.04em;
   text-align: left;
+}
+.section--text {
+  font-family: "Satoshi";
+  font-size: 136px;
+  font-weight: 700;
+  line-height: 134px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  width: 50%;
+  margin-top: -13rem;
+  padding: 0rem 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+ul {
+  display: flex;
+}
+li {
+  padding-left: 0.5rem;
+  list-style: none;
+  font-family: 'Satoshi';
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+}
+a {
+  text-decoration: none;
+}
+.nav-text {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
 }
