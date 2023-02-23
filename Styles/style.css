@@ -1,10 +1,14 @@
+@import url('./css/satoshi.css');
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../font/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf');
+}
 * {
   padding: 0rem;
   margin: 0;
 }
 body {
     background: rgba(225, 205, 181, 1);
-
 }
 header {
   display: flex;
@@ -25,7 +29,7 @@ header {
   text-align: left;
 }
 .section--text {
-  font-family: "Satoshi";
+    font-family: 'Satoshi';
   font-size: 136px;
   font-weight: 700;
   line-height: 134px;
@@ -46,7 +50,7 @@ ul {
 li {
   padding-left: 0.5rem;
   list-style: none;
-  font-family: 'Satoshi';
+  font-family: 'Satoshi-Bold';
   font-size: 20px;
   font-weight: 700;
   color: rgba(0, 0, 0, 1);
