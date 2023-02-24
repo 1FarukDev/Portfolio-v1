@@ -2,11 +2,14 @@
 @font-face {
     font-family: 'Satoshi';
     src: url('../font/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf');
-}
-* {
-  padding: 0rem;
-  margin: 0;
-}
+  }
+  * {
+    padding: 0rem;
+    margin: 0;
+  }
+  .Hero{
+    height: 100vh;
+  }
 body {
     background: rgba(225, 205, 181, 1);
 }
