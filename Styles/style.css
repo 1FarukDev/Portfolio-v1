@@ -1,17 +1,17 @@
-@import url('./css/satoshi.css');
+@import url("./css/satoshi.css");
 @font-face {
-    font-family: 'Satoshi';
-    src: url('../font/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf');
-  }
-  * {
-    padding: 0rem;
-    margin: 0;
-  }
-  .Hero{
-    height: 100vh;
-  }
+  font-family: "Satoshi";
+  src: url("../font/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf");
+}
+* {
+  padding: 0rem;
+  margin: 0;
+}
+.Hero {
+  height: 100vh;
+}
 body {
-    background: rgba(225, 205, 181, 1);
+  background: rgba(225, 205, 181, 1);
 }
 header {
   display: flex;
@@ -32,7 +32,7 @@ header {
   text-align: left;
 }
 .section--text {
-    font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-size: 136px;
   font-weight: 700;
   line-height: 134px;
@@ -53,7 +53,7 @@ ul {
 li {
   padding-left: 0.5rem;
   list-style: none;
-  font-family: 'Satoshi-Bold';
+  font-family: "Satoshi";
   font-size: 20px;
   font-weight: 700;
   color: rgba(0, 0, 0, 1);
@@ -62,9 +62,53 @@ a {
   text-decoration: none;
 }
 .nav-text {
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 30px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+}
+.about {
+  padding: 0 2rem;
+}
+.about-number {
+  font-family: "Satoshi";
+  font-size: 18px;
+  font-weight: 700;
+  /* line-height: 24px; */
+  letter-spacing: -0.04em;
+  text-align: left;
+  margin-bottom: -5rem;
+}
+.about-text {
+  font-family: "Satoshi";
+  font-size: 110px;
+  font-weight: 700;
+  text-align: left;
+}
+.about-para {
+  font-family: "Satoshi";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  width: 70%;
+}
+.about-stack {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  width: 30%;
+  margin-top: 5rem;
+}
+.stacks-para {
+  padding: 0.3em 1rem;
+  background: rgba(253, 242, 196, 1);
+  font-family: 'Satoshi';
+  letter-spacing: -0.04em;
+  font-size: 1rem;
+  text-align: left;
+  border-radius: 4px;
+  margin: .3rem .5rem;
 }
