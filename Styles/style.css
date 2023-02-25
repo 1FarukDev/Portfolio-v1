@@ -11,11 +11,8 @@
   padding: 0rem;
   margin: 0;
   scroll-behavior: smooth;
-  transition: 1;
+  transition: 0.3s;
 }
-/* .Hero {
-  height: 100vh;
-} */
 body {
   background: rgba(225, 205, 181, 1);
 }
@@ -24,7 +21,6 @@ header {
   justify-content: space-between;
 }
 .header-image {
-  /* height: 1080.000000000004px; */
   width: 600px;
   left: 1644px;
 }
@@ -66,6 +62,8 @@ li {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
 }
 .nav-text {
   font-family: "Satoshi-light";
@@ -75,17 +73,15 @@ a {
   line-height: 30px;
 }
 .about,
-.experience {
+.experience,
+.Project,
+footer {
   padding: 2rem 2rem;
-  height: 60vh;
 }
 .about-number {
   font-family: "Satoshi";
   font-size: 18px;
   font-weight: 700;
-  /* line-height: 24px; */
-  letter-spacing: -0.04em;
-  text-align: left;
   margin-bottom: -5rem;
 }
 .about-text {
@@ -120,6 +116,15 @@ a {
   border-radius: 4px;
   margin: 0.3rem 0.5rem;
 }
+.para {
+  font-family: "Satoshi";
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0.3em 1rem;
+}
+.experience {
+  margin-top: 7rem;
+}
 .experience-text-para {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
@@ -143,5 +148,70 @@ a {
 .experience-info-details {
   font-family: "Satoshi-light";
   font-size: 14px;
+  font-weight: 400;
+}
+.Project-text {
+  font-family: "Satoshi";
+  font-size: 136px;
+  font-weight: 700;
+  line-height: 184px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+.project-name--link {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Satoshi";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.4032000005245209px;
+  text-align: left;
+}
+.project-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.project-description {
+  font-family: "Satoshi-light";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.00800000037997961px;
+  text-align: left;
+}
+.footer-head {
+  font-family: "Satoshi";
+  font-size: 136px;
+  font-weight: 700;
+  line-height: 184px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer-text {
+  font-family: "Satoshi";
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.footer-copy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.footer-links-to {
+  font-family: "Satoshi";
+  font-size: 22px;
+  font-weight: 500;
+  padding: 1rem;
+}
+.footer-copywright {
+  font-family: 'Satoshi-light';
+  font-size: 22px;
   font-weight: 400;
 }
