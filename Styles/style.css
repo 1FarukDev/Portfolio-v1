@@ -30,8 +30,7 @@ header {
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: -0.04em;
-  text-align: left;
+  animation: movesinleft 1s ease-in;
 }
 .section--text {
   font-family: "Satoshi";
@@ -43,11 +42,13 @@ header {
   width: 50%;
   margin-top: -13rem;
   padding: 0rem 2rem;
+  animation: movesinleft 1s ease-in;
 }
 nav {
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
+  animation: movesinbottom 1s ease-in;
 }
 ul {
   display: flex;
@@ -214,4 +215,32 @@ footer {
   font-family: 'Satoshi-light';
   font-size: 22px;
   font-weight: 400;
+}
+@keyframes movesinleft{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes movesinbottom{
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50%{
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
 }
