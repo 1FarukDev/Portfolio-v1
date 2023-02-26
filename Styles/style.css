@@ -24,7 +24,7 @@
 }
 @keyframes progress {
   to{
-    background-color: rgb(20, 255, 226);
+    background-color: rgba(0, 0, 0, 1);
     width: 100%;
   }
 }
@@ -51,7 +51,7 @@ header {
   font-family: "Satoshi";
   font-size: 136px;
   font-weight: 700;
-  line-height: 134px;
+  /* line-height: 134px; */
   letter-spacing: -0.04em;
   text-align: left;
   width: 50%;
@@ -94,7 +94,7 @@ a {
 footer {
   padding: 2rem 2rem;
 }
-.about-animation{
+.about-animation {
   animation: movesinleft .8s ease-in;
 }
 .about-number {
@@ -125,6 +125,9 @@ footer {
   width: 30%;
   margin-top: 3rem;
 }
+.stack-animation{
+  animation: movesinright 1s ease-in-out;
+}
 .stacks-para {
   padding: 0.3em 1rem;
   background: rgba(253, 242, 196, 1);
@@ -143,6 +146,9 @@ footer {
 }
 .experience {
   margin-top: 7rem;
+}
+.experience-animation{
+  animation: movesinleft .8s ease-in;
 }
 .experience-text-para {
   display: grid;
@@ -248,6 +254,20 @@ footer {
     transform: translate(0);
   }
 }
+@keyframes movesinright{
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 @keyframes movesinbottom{
   0%{
     opacity: 0;
@@ -262,3 +282,215 @@ footer {
     transform: translate(0);
   }
 }
+@media screen and (max-width: 800px) {
+  .header-image {
+    width: 200px;
+    /* left: 1600px; */
+  }
+  .project-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header-text {
+    padding: .5rem;
+    font-family: "Satoshi";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    animation: movesinleft .8s ease-in;
+  }
+  .section--text {
+    font-family: "Satoshi";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+    width: 90%;
+    text-transform: capitalize;
+    margin-top: -3rem;
+    padding: .5rem;
+    animation: movesinleft .8s ease-in;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    justify-content: center;
+    text-align: center;
+    padding: .3rem;
+    animation: none;
+  }
+  li {
+    padding-left: 0.5rem;
+    list-style: none;
+    font-family: "Satoshi";
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    text-transform: capitalize;
+    margin: auto;
+  }
+  .nav-text {
+    font-family: "Satoshi-light";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .about,
+  .experience,
+  .Project,
+  footer {
+    padding: .3rem;
+  }
+  .about-animation {
+    animation: none;
+  }
+  .about-number {
+    font-family: "Satoshi";
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: -7rem;
+  }
+  .about-text {
+    font-family: "Satoshi";
+    font-size: 100px;
+    font-weight: 700;
+  }
+  .about-para {
+    font-family: "Satoshi";
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    width: 100%;
+    padding: .3rem;
+  }
+  .about-stack {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 100%;
+    margin-bottom: 0rem;
+  }
+  .stack-animation{
+    animation: movesinright 1s ease-in-out;
+  }
+  .stacks-para {
+    padding: 0.3em 1rem;
+    background: rgba(253, 242, 196, 1);
+    font-family: "Satoshi";
+    letter-spacing: -0.04em;
+    font-size: 1rem;
+    text-align: left;
+    border-radius: 4px;
+    margin: 0.3rem 0.5rem;
+  }
+  .para {
+    font-family: "Satoshi";
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0.3em 1rem;
+  }
+  .experience {
+    margin-top: 0rem;
+  }
+  .experience-animation{
+    animation: movesinleft .8s ease-in;
+  }
+  .experience-text{
+    font-size: 50px;
+    text-decoration: underline;
+  }
+  .Project-texts{
+    font-size: 80px;
+    text-decoration: underline;
+  }
+  .experience-text-para {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .3rem;
+  }
+  .experience-info {
+    width: 100%;
+  }
+  .experience-info-date {
+    font-family: "Satoshi-light";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 11px;
+  }
+  .experience-info-title {
+    font-family: "Satoshi";
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+  }
+  .experience-info-details {
+    font-family: "Satoshi-light";
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .Project-text {
+    font-family: "Satoshi";
+    font-size: 136px;
+    font-weight: 700;
+    line-height: 184px;
+    letter-spacing: -0.04em;
+    text-align: left;
+  }
+  .project-name--link {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Satoshi";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.4032000005245209px;
+    text-align: left;
+  }
+  .project-info {
+    display: flex;
+    flex: wrap;
+    place-items: center;
+  }
+  .footer-head {
+    font-family: "Satoshi";
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .footer-text {
+    font-family: "Satoshi";
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: .2rem;
+  }
+  .footer-copy {
+    display: block;
+    place-content: center;
+    place-items: center;
+
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+  .footer-links-to {
+    font-family: "Satoshi";
+    font-size: 22px;
+    font-weight: 500;
+    padding: 1rem;
+  }
+  .footer-copywright {
+    font-family: 'Satoshi-light';
+    font-size: 22px;
+    font-weight: 400;
+  }
+  }
