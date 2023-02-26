@@ -13,6 +13,21 @@
   scroll-behavior: smooth;
   transition: 0.3s;
 }
+.progress{
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+@keyframes progress {
+  to{
+    background-color: rgb(20, 255, 226);
+    width: 100%;
+  }
+}
 body {
   background: rgba(225, 205, 181, 1);
 }
@@ -30,7 +45,7 @@ header {
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
-  animation: movesinleft 1s ease-in;
+  animation: movesinleft .8s ease-in;
 }
 .section--text {
   font-family: "Satoshi";
@@ -42,7 +57,7 @@ header {
   width: 50%;
   margin-top: -13rem;
   padding: 0rem 2rem;
-  animation: movesinleft 1s ease-in;
+  animation: movesinleft .8s ease-in;
 }
 nav {
   display: flex;
@@ -78,6 +93,9 @@ a {
 .Project,
 footer {
   padding: 2rem 2rem;
+}
+.about-animation{
+  animation: movesinleft .8s ease-in;
 }
 .about-number {
   font-family: "Satoshi";
