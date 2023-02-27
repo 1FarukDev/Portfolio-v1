@@ -51,7 +51,7 @@ header {
   font-family: "Satoshi";
   font-size: 136px;
   font-weight: 700;
-  /* line-height: 134px; */
+  line-height: 134px;
   letter-spacing: -0.04em;
   text-align: left;
   width: 50%;
@@ -314,21 +314,19 @@ footer {
   nav {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     justify-content: center;
     text-align: center;
     padding: .3rem;
     animation: none;
   }
   li {
-    padding-left: 0.5rem;
-    list-style: none;
-    font-family: "Satoshi";
-    font-size: 20px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
+    font-size: 30px;
     text-transform: capitalize;
-    margin: auto;
+  }
+   .nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .nav-text {
     font-family: "Satoshi-light";
@@ -337,12 +335,14 @@ footer {
     font-size: 22px;
     line-height: 30px;
   }
-  .about,
+  /* .about,
   .experience,
   .Project,
   footer {
     padding: .3rem;
+     width: 90%;
   }
+  */
   .about-animation {
     animation: none;
   }
@@ -350,7 +350,8 @@ footer {
     font-family: "Satoshi";
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: -7rem;
+    margin-bottom: 0rem;
+    /* text-align: center; */
   }
   .about-text {
     font-family: "Satoshi";
@@ -440,6 +441,10 @@ footer {
     letter-spacing: -0.04em;
     text-align: left;
   }
+  .project-data{
+    width:100%;
+    overflow: hidden;
+  }
   .project-name--link {
     display: flex;
     justify-content: space-between;
@@ -488,9 +493,19 @@ footer {
     font-weight: 500;
     padding: 1rem;
   }
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .footer-copywright {
     font-family: 'Satoshi-light';
-    font-size: 22px;
+    font-size: 20px;
+    margin-top: 1rem;
     font-weight: 400;
   }
+   /* footer{
+    display: none;
+  } */
   }
