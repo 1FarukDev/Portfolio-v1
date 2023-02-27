@@ -5,3 +5,4 @@ I was motivated to build it when i realized that i have to show recruiters my po
 Built with Vanilla HTML, CSS and Javascript.
 # Credit
 Thanks to MosesMax for Designing the UI. I really appreciate
+jdjdjdj
