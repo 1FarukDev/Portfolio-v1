@@ -13,7 +13,7 @@
   scroll-behavior: smooth;
   transition: 0.3s;
 }
-.progress{
+.progress {
   height: 3px;
   width: 0%;
   background-color: #fff;
@@ -23,7 +23,7 @@
   animation: progress 1s linear;
 }
 @keyframes progress {
-  to{
+  to {
     background-color: rgba(0, 0, 0, 1);
     width: 100%;
   }
@@ -45,7 +45,7 @@ header {
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
-  animation: movesinleft .8s ease-in;
+  animation: movesinleft 0.8s ease-in;
 }
 .section--text {
   font-family: "Satoshi";
@@ -57,7 +57,7 @@ header {
   width: 50%;
   margin-top: -13rem;
   padding: 0rem 2rem;
-  animation: movesinleft .8s ease-in;
+  animation: movesinleft 0.8s ease-in;
 }
 nav {
   display: flex;
@@ -95,7 +95,7 @@ footer {
   padding: 2rem 2rem;
 }
 .about-animation {
-  animation: movesinleft .8s ease-in;
+  animation: movesinleft 0.8s ease-in;
 }
 .about-number {
   font-family: "Satoshi";
@@ -125,7 +125,7 @@ footer {
   width: 30%;
   margin-top: 3rem;
 }
-.stack-animation{
+.stack-animation {
   animation: movesinright 1s ease-in-out;
 }
 .stacks-para {
@@ -147,8 +147,8 @@ footer {
 .experience {
   margin-top: 7rem;
 }
-.experience-animation{
-  animation: movesinleft .8s ease-in;
+.experience-animation {
+  animation: movesinleft 0.8s ease-in;
 }
 .experience-text-para {
   display: grid;
@@ -236,68 +236,67 @@ footer {
   padding: 1rem;
 }
 .footer-copywright {
-  font-family: 'Satoshi-light';
+  font-family: "Satoshi-light";
   font-size: 22px;
   font-weight: 400;
 }
-@keyframes movesinleft{
-  0%{
+@keyframes movesinleft {
+  0% {
     opacity: 0;
     transform: translateX(-100px);
   }
-  50%{
+  50% {
     opacity: 1;
     transform: translateX(20px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translate(0);
   }
 }
-@keyframes movesinright{
-  0%{
+@keyframes movesinright {
+  0% {
     opacity: 0;
     transform: translateX(100px);
   }
-  50%{
+  50% {
     opacity: 1;
     transform: translateX(20px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translate(0);
   }
 }
-@keyframes movesinbottom{
-  0%{
+@keyframes movesinbottom {
+  0% {
     opacity: 0;
     transform: translateY(100px);
   }
-  50%{
+  50% {
     opacity: 1;
     transform: translateY(-20px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translate(0);
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 640px) {
   .header-image {
     width: 200px;
-    /* left: 1600px; */
   }
   .project-info {
     display: flex;
     flex-wrap: wrap;
   }
   .header-text {
-    padding: .5rem;
+    padding: 0.5rem;
     font-family: "Satoshi";
     font-size: 30px;
     font-weight: 700;
     line-height: 24px;
-    animation: movesinleft .8s ease-in;
+    animation: movesinleft 0.8s ease-in;
   }
   .section--text {
     font-family: "Satoshi";
@@ -308,25 +307,26 @@ footer {
     width: 90%;
     text-transform: capitalize;
     margin-top: -3rem;
-    padding: .5rem;
-    animation: movesinleft .8s ease-in;
+    padding: 0.5rem;
+    animation: movesinleft 0.8s ease-in;
   }
   nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: .3rem;
+    padding: 0.3rem;
     animation: none;
   }
   li {
     font-size: 30px;
     text-transform: capitalize;
   }
-   .nav-links{
+  .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
   }
   .nav-text {
     font-family: "Satoshi-light";
@@ -335,14 +335,6 @@ footer {
     font-size: 22px;
     line-height: 30px;
   }
-  /* .about,
-  .experience,
-  .Project,
-  footer {
-    padding: .3rem;
-     width: 90%;
-  }
-  */
   .about-animation {
     animation: none;
   }
@@ -351,7 +343,7 @@ footer {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 0rem;
-    /* text-align: center; */
+    display: none;
   }
   .about-text {
     font-family: "Satoshi";
@@ -366,7 +358,7 @@ footer {
     letter-spacing: -0.04em;
     text-align: left;
     width: 100%;
-    padding: .3rem;
+    padding: 0.3rem;
   }
   .about-stack {
     display: flex;
@@ -375,7 +367,7 @@ footer {
     width: 100%;
     margin-bottom: 0rem;
   }
-  .stack-animation{
+  .stack-animation {
     animation: movesinright 1s ease-in-out;
   }
   .stacks-para {
@@ -397,21 +389,21 @@ footer {
   .experience {
     margin-top: 0rem;
   }
-  .experience-animation{
-    animation: movesinleft .8s ease-in;
+  .experience-animation {
+    animation: movesinleft 0.8s ease-in;
   }
-  .experience-text{
+  .experience-text {
     font-size: 50px;
     text-decoration: underline;
   }
-  .Project-texts{
+  .Project-texts {
     font-size: 80px;
     text-decoration: underline;
   }
   .experience-text-para {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 .3rem;
+    padding: 0 0.3rem;
   }
   .experience-info {
     width: 100%;
@@ -441,8 +433,8 @@ footer {
     letter-spacing: -0.04em;
     text-align: left;
   }
-  .project-data{
-    width:100%;
+  .project-data {
+    width: 100%;
     overflow: hidden;
   }
   .project-name--link {
@@ -477,7 +469,7 @@ footer {
     text-align: center;
     width: 100%;
     margin: auto;
-    padding: .2rem;
+    padding: 0.2rem;
   }
   .footer-copy {
     display: block;
@@ -493,19 +485,48 @@ footer {
     font-weight: 500;
     padding: 1rem;
   }
-  footer{
+  footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .footer-copywright {
-    font-family: 'Satoshi-light';
+    font-family: "Satoshi-light";
     font-size: 20px;
     margin-top: 1rem;
     font-weight: 400;
   }
-   /* footer{
+  /* footer{
     display: none;
   } */
+}
+@media screen and (max-width: 780px) {
+  .header-image {
+    width: 300px;
   }
+  .header-text {
+    font-size: 40px;
+  }
+  .section--text {
+    font-size: 70px;
+    line-height: 60px;
+    width: 80%;
+  }
+  .about-para {
+    font-family: "Satoshi";
+    width: 100%;
+  }
+  .about-stack {
+    width: 90%;
+  }
+  .experience-info {
+    width: 100%;
+  }
+  .project-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 0.5rem;
+  }
+}
