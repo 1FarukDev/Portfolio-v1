@@ -175,7 +175,7 @@ footer {
   font-size: 14px;
   font-weight: 400;
 }
-.Project-text {
+.Project-texts {
   font-family: "Satoshi";
   font-size: 136px;
   font-weight: 700;
@@ -292,7 +292,7 @@ footer {
   .section--text {
     font-size: 70px;
     line-height: 60px;
-    width: 80%;
+    width: 70%;
   }
   .about-para {
     font-family: "Satoshi";
