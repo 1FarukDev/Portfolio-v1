@@ -21,7 +21,10 @@
   z-index: 100;
 }
 #preloader-text{
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   color: white;
 }
 .progress {
