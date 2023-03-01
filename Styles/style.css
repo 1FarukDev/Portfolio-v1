@@ -13,6 +13,17 @@
   scroll-behavior: smooth;
   transition: 0.3s;
 }
+#preloader{
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+#preloader-text{
+  position: absolute;
+  color: white;
+}
 .progress {
   height: 3px;
   width: 0%;
