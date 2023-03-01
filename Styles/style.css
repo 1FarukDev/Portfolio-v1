@@ -14,7 +14,7 @@
   transition: 0.3s;
 }
 #preloader{
-  background: #000;
+  background: rgba(225, 205, 181, 1);
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -25,7 +25,40 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  color: white;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Satoshi';
+  font-size: 50px;
+}
+.dot{
+  width: 20px;
+  height: 3vh;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  margin: .5rem;
+  animation: load 3s ease-in-out infinite;
+}
+@keyframes load {
+  0%, 100%{
+    transform: scale(.2);
+  }
+  50%{
+    transform: scale(1);
+  }
+}
+span:nth-child(0){
+  animation-delay: 0s;
+}
+span:nth-child(1){
+  animation-delay: .2s;
+}
+span:nth-child(2){
+  animation-delay: .4s;
+}
+span:nth-child(3){
+  animation-delay: .8s;
+}
+span:nth-child(4){
+  animation-delay: 1s;
 }
 .progress {
   height: 3px;
