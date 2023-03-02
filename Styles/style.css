@@ -367,6 +367,9 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
+#preloader-text{
+  font-size: 30px;
+}
   .header-text {
     padding: 0.5rem;
     font-family: "Satoshi";
@@ -424,8 +427,9 @@ footer {
   }
   .about-text {
     font-family: "Satoshi";
-    font-size: 100px;
-    font-weight: 700;
+    font-size: 70px;
+    /* font-weight: 700; */
+    text-decoration: underline;
   }
   .about-para {
     font-family: "Satoshi";
