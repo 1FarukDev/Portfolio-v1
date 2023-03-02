@@ -556,13 +556,12 @@ footer {
     display: block;
     place-content: center;
     place-items: center;
-
     justify-content: space-between;
     margin-top: 3rem;
   }
   .footer-links-to {
     font-family: "Satoshi";
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     padding: 1rem;
   }
