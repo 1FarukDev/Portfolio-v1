@@ -360,6 +360,9 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
+  body{
+    background: rgba(225, 205, 181, 0.69);
+  }
   .header-image {
     width: 200px;
   }
