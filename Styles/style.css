@@ -361,7 +361,8 @@ footer {
 
 @media screen and (max-width: 640px) {
   body{
-    background: rgba(225, 205, 181, 0.357);
+    background: black;
+    /* background: rgba(225, 205, 181, 0.357); */
   }
   .header-image {
     width: 200px;
